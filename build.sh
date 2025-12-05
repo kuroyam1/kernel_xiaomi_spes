@@ -70,7 +70,7 @@ if [ ! -d "$TOOLCHAIN_DIRECTORY" ]; then
     tar -xzf file.tar.gz -C $TOOLCHAIN_DIRECTORY/custom-clang
 fi
 
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s nongki
+curl -LSs "https://github.com/backslashxx/KernelSU/raw/refs/heads/master/kernel/setup.sh" | bash -s
 
 if [ -d "$TOOLCHAIN_DIRECTORY/custom-clang" ]; then
     echo -e "${bldgrn}"
