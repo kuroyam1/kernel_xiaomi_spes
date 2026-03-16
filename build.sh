@@ -70,7 +70,7 @@ if [ ! -d "$TOOLCHAIN_DIRECTORY" ]; then
     tar -xzf file.tar.gz -C $TOOLCHAIN_DIRECTORY/custom-clang
 fi
 
-curl -LSs "https://raw.githubusercontent.com/backslashxx/KernelSU/refs/heads/master/kernel/setup.sh" | bash -s 
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s v0.9.5
 
 if [ -d "$TOOLCHAIN_DIRECTORY/custom-clang" ]; then
     echo -e "${bldgrn}"
